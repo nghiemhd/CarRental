@@ -3,11 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{26A988B6-D08B-43CC-BCD8-28DC60D778B3}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E6DA217E-2E19-4D59-A0F7-75F1F491DBD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "..\Core\Core.Common\Core.Common.csproj", "{EE9AB21C-2434-492A-AC4D-922A19C5E8D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E3654DAF-729B-4888-8EB7-C170479CBAC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{F33434C1-24E8-42D3-9ABC-23F4D2E827A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{9887B3B9-197B-4959-9B16-2CE3801EC58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Client.Entities", "CarRental.Client.Entities\CarRental.Client.Entities.csproj", "{427824D3-35BB-4E88-9A73-EF69455A2824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Business.Entities", "CarRental.Business.Entities\CarRental.Business.Entities.csproj", "{A07988BA-5ED1-4BE6-8691-1E9949CE979C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common.Contracts", "..\Core\Core.Common.Contracts\Core.Common.Contracts.csproj", "{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource Access", "Resource Access", "{FFA5E7AA-D7B2-4F33-9CFA-253EFA851AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Data", "CarRental.Data\CarRental.Data.csproj", "{29AF8F7D-CC88-49C6-BEC2-2C21F583708E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,19 +29,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26A988B6-D08B-43CC-BCD8-28DC60D778B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26A988B6-D08B-43CC-BCD8-28DC60D778B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26A988B6-D08B-43CC-BCD8-28DC60D778B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26A988B6-D08B-43CC-BCD8-28DC60D778B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE9AB21C-2434-492A-AC4D-922A19C5E8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE9AB21C-2434-492A-AC4D-922A19C5E8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE9AB21C-2434-492A-AC4D-922A19C5E8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE9AB21C-2434-492A-AC4D-922A19C5E8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427824D3-35BB-4E88-9A73-EF69455A2824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427824D3-35BB-4E88-9A73-EF69455A2824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427824D3-35BB-4E88-9A73-EF69455A2824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427824D3-35BB-4E88-9A73-EF69455A2824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07988BA-5ED1-4BE6-8691-1E9949CE979C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07988BA-5ED1-4BE6-8691-1E9949CE979C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07988BA-5ED1-4BE6-8691-1E9949CE979C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07988BA-5ED1-4BE6-8691-1E9949CE979C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AF8F7D-CC88-49C6-BEC2-2C21F583708E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AF8F7D-CC88-49C6-BEC2-2C21F583708E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AF8F7D-CC88-49C6-BEC2-2C21F583708E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AF8F7D-CC88-49C6-BEC2-2C21F583708E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EE9AB21C-2434-492A-AC4D-922A19C5E8D5} = {E6DA217E-2E19-4D59-A0F7-75F1F491DBD6}
+		{427824D3-35BB-4E88-9A73-EF69455A2824} = {F33434C1-24E8-42D3-9ABC-23F4D2E827A1}
+		{A07988BA-5ED1-4BE6-8691-1E9949CE979C} = {9887B3B9-197B-4959-9B16-2CE3801EC58F}
+		{FB4D03FF-4F42-4CCD-BCA8-E686211AEF21} = {E6DA217E-2E19-4D59-A0F7-75F1F491DBD6}
+		{29AF8F7D-CC88-49C6-BEC2-2C21F583708E} = {FFA5E7AA-D7B2-4F33-9CFA-253EFA851AC1}
 	EndGlobalSection
 EndGlobal
